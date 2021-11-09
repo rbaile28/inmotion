@@ -1,6 +1,22 @@
 # Ryan Bailey InMotion Coding Exercise
 
+This project is live at [rbailey.dev](https://rbailey.dev/inmotion)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
+
+*Requirements for the assignment were as follows:*
+
+For this project, you are tasked with creating an Angular v12 application. Create one application with 2 features and follow good design principles.
+
+Feature 1 - Display WordPress Posts
+
+The application should display the most recent 20 posts from the REST API on this WordPress site: http://wordpress.org/news/wp-json/ . The post should be displayed in an Angular Material table. The columns of the table should be id, slug, status, title, and creation date. When a user clicks on a table row, the application should display a link to the post and the rendered post content.
+
+Feature 2 - Google Maps Integration
+
+This feature should interface with the Google Maps API. This feature should accept user input and render a map displaying some data. The user input and visual produced is your preference. You may pull additional API’s to produce your map.
+
+You should spend no more than 6 hours on this project. 
 
 ## Development server
 
