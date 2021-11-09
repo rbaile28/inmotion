@@ -1,0 +1,44 @@
+.flex-container {
+    display: flex;
+
+    .teamList{
+        width: 20vw;
+        height: calc(100vh - 64px);
+        overflow-y: scroll;
+
+        mat-card{
+            margin: 10px 0;
+            cursor: pointer;
+            border: 2px solid transparent;
+            &.selected{
+                border: 2px solid #c2185b;
+                border-left: none;
+            }
+
+            .teamLogo{
+                margin-top: -.15em;
+                color: white;
+                float: left;
+                width: .8em;
+                margin-right: .3em;
+                text-align: center;
+            }
+            .teamName{
+                font-size: 1.3em;
+                font-weight: bold;
+                display: block;
+            }
+            .teamAddress{
+                display: block;
+            }
+        }
+        
+    }
+    .mapSection{
+        width:80vw;
+        agm-map {
+            height: calc(100vh - 64px);
+        } 
+    }
+
+}

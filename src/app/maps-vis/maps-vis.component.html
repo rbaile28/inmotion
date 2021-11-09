@@ -1,0 +1,22 @@
+<div class="flex-container">
+    <section class="teamList">
+        <mat-card 
+            *ngFor="let team of teams" 
+            (click)="lat = team.lat; lng = team.lng;"
+            [class.selected]="lat == team.lat"
+        >
+                <i class="teamLogo bb-3x bb-{{team.abbr}}"></i> 
+                <span class="teamName">{{team.name}}</span>
+                <span class="teamAddress">{{team.address}}</span>
+        </mat-card>
+    </section>
+    <section class="mapSection">
+        <agm-map 
+            [latitude]="lat"
+            [longitude]="lng"
+            [zoom]="zoom"
+            [disableDefaultUI]="false">
+        </agm-map>
+    </section>
+</div>
+
